@@ -33,6 +33,10 @@ body {
 	padding-inline: 10px;
 }
 
+.nav li:hover, .nav li:focus {
+	text-decoration: underline;
+}
+
 .nav a {
 	text-decoration: none;
 	color: #000
@@ -100,14 +104,21 @@ body {
 .gallery .nav {
 	justify-content: center;
 }
-.nav-pills .nav-link.active, .nav-pills .show > .nav-link {
-	color: #fff;
+.nav-pills .nav-link.active-tag, .nav-pills .show > .nav-link {
+	color: black;
+	font-weight: bold;
 	background-color: #BEB45A;
-	border-radius:0 ;
+	border-radius: 3px;
 }
+
 .nav-pills .nav-link {
 	color: #000
 }
+
+.nav-link:hover, .nav-link:focus{
+	text-decoration: underline;
+}
+
 .item-column {
 	position: relative;
 	margin-bottom: 0 !important;
