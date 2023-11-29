@@ -46,6 +46,10 @@ body {
 	width: 20px;
 }
 
+.carousel-control-prev:hover, .carousel-control-next:hover{
+	background-color: rgba(0, 0, 0, 0.3);
+}
+
 #about {
 	display: flex;
 	background-color: #F6D2B8;
@@ -94,9 +98,9 @@ body {
 	font-size: 14px;
 }
 
-#gallery {
-	/*	min-height: 100vh; */
-}
+/* #gallery {
+		min-height: 100vh;
+} */
 .title{
 	text-align: center;
 	padding-block: 2em;
@@ -112,7 +116,8 @@ body {
 }
 
 .nav-pills .nav-link {
-	color: #000
+	color: #000;
+	cursor: pointer;
 }
 
 .nav-link:hover, .nav-link:focus{
