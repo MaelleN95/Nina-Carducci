@@ -96,18 +96,18 @@ hr:not([size]) {
   height: 1px;
 }
 
-h6, .h6, h5, .h5, h4, .h4, h3, .h3, h2, .h2, h1, .h1 {
+h6, .h6, h5, .h5, h4, .h4, h3, .h3, h2, .h2, h1, .h1, .quote__text, .about-me__introduction, .service__price span {
   margin-top: 0;
   margin-bottom: 0.5rem;
   font-weight: 500;
   line-height: 1.2;
 }
 
-h1, .h1 {
+.quote__text {
   font-size: calc(1.375rem + 1.5vw);
 }
 @media (min-width: 1200px) {
-  h1, .h1 {
+  .quote__text {
     font-size: 2.5rem;
   }
 }
@@ -121,20 +121,20 @@ h2, .h2 {
   }
 }
 
-h3, .h3 {
+h2, .h2, h1,h3 {
   font-size: calc(1.3rem + 0.6vw);
 }
 @media (min-width: 1200px) {
-  h3, .h3 {
+  h2, .h2, h1, h3 {
     font-size: 1.75rem;
   }
 }
 
-h4, .h4 {
+.service__price span {
   font-size: calc(1.275rem + 0.3vw);
 }
 @media (min-width: 1200px) {
-  h4, .h4 {
+  .service__price span {
     font-size: 1.5rem;
   }
 }
@@ -143,7 +143,7 @@ h5, .h5 {
   font-size: 1.25rem;
 }
 
-h6, .h6 {
+.about-me__introduction {
   font-size: 1rem;
 }
 

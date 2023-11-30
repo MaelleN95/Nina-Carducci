@@ -80,9 +80,10 @@ nav a:hover, nav a:focus {
 }
 
 .picture img {
-	width: 38.8vw;
+	width: 100%;
+	max-width: 500px;
 	height: auto;
-
+ 
 }
 #about-me {
 	flex: 2
@@ -93,6 +94,7 @@ nav a:hover, nav a:focus {
 	font-size: 30px;
 }
 .about-me__introduction {
+	display: block;
 	font-family: 'Spectral';
 	font-weight: 800;
 	font-style: italic;
@@ -214,6 +216,10 @@ nav a:hover, nav a:focus {
 	z-index: 1;
 }
 
+.service__price p{
+	margin: unset;
+}
+
 #contact {
 	margin: auto;
 	background-color: #D8D3A8 ;
@@ -279,7 +285,7 @@ input[type="submit"] {
 		margin-top: 0;
 		margin-bottom: 1em;
 	}
-	#about-me span, #about-me p {
+	.about-me__introduction , #about-me p {
 		width: 100%;
 	}
 }
