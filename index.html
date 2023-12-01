@@ -1,13 +1,168 @@
 <!DOCTYPE html>
 <html lang="fr">
 <head>
-	<title>Nina Carducci - Photographe sur Bordeaux</title>
-	<meta name="description" content="">
+	<title>Nina Carducci - Photographe portraits et événementiel</title>
+	<meta name="description" content="Nina Carducci, photographe passionnée basée à Bordeaux. Découvrez son talent unique à travers des clichés exceptionnels et laissez-vous emporter par la magie de l'instant figé dans le temps.">
 
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	
-	<link rel="stylesheet" href="./assets/bootstrap/bootstrap.css" media="screen">
+	<style>
+		:root {
+			--bs-font-sans-serif: system-ui, -apple-system, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, 'Noto Sans', 'Liberation Sans', sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol', 'Noto Color Emoji';
+			--bs-body-font-family: var(--bs-font-sans-serif);
+			--bs-body-font-size: 1rem;
+			--bs-body-font-weight: 400;
+			--bs-body-line-height: 1.5;
+			--bs-body-color: #212529;
+			--bs-body-bg: #fff;
+		}
+		*,*::before,*::after {
+			box-sizing: border-box;
+		}
+		body {
+			margin: 0;
+			font-family: var(--bs-body-font-family);
+			font-size: var(--bs-body-font-size);
+			font-weight: var(--bs-body-font-weight);
+			line-height: var(--bs-body-line-height);
+			color: var(--bs-body-color);
+			text-align: var(--bs-body-text-align);
+			background-color: var(--bs-body-bg);
+			-webkit-text-size-adjust: 100%;
+			-webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+		}
+		h6,h5,h4,h3,h2,h1,
+		.quote__text,
+		.about-me__introduction,
+		.service__price span {
+			margin-top: 0;
+			margin-bottom: 0.5rem;
+			font-weight: 500;
+			line-height: 1.2;
+		}
+		.quote__text {
+			font-size: calc(1.375rem + 1.5vw);
+		}
+		h2{
+			font-size: calc(1.325rem + 0.9vw);
+		}
+		h2,h1,h3 {
+			font-size: calc(1.3rem + 0.6vw);
+		}
+		.service__price span {
+			font-size: calc(1.275rem + 0.3vw);
+		}
+		.about-me__introduction {
+			font-size: 1rem;
+		}
+		p {
+			margin-top: 0;
+			margin-bottom: 1rem;
+		}
+		ol,
+		ul {
+			padding-left: 2rem;
+		}
+		ol,ul{
+			margin-top: 0;
+			margin-bottom: 1rem;
+		}
+		blockquote {
+			margin: 0 0 1rem;
+		}
+		a {
+			color: #0d6efd;
+			text-decoration: underline;
+		}
+		figure {
+			margin: 0 0 1rem;
+		}
+		img,
+		svg {
+			vertical-align: middle;
+		}
+		label {
+			display: inline-block;
+		}
+		button {
+			border-radius: 0;
+		}
+		input,button,select,optgroup,textarea {
+			margin: 0;
+			font-family: inherit;
+			font-size: inherit;
+			line-height: inherit;
+		}
+		button,select {
+			text-transform: none;
+		}
+		button,
+		[type='button'],
+		[type='reset'],
+		[type='submit'] {
+			appearance: button;
+		}
+		button:not(:disabled),
+		[type='button']:not(:disabled),
+		[type='reset']:not(:disabled),
+		[type='submit']:not(:disabled) {
+		cursor: pointer;
+		}
+		textarea {
+			resize: vertical;
+		}
+		.nav {
+			display: flex;
+			flex-wrap: wrap;
+			padding-left: 0;
+			margin-bottom: 0;
+			list-style: none;
+		}
+		.nav-link {
+			display: block;
+			padding: 0.5rem 1rem;
+			color: #0d6efd;
+			text-decoration: none;
+			transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out, border-color 0.15s ease-in-out;
+		}
+		.carousel {
+			position: relative;
+		}
+		.carousel-inner {
+			position: relative;
+			width: 100%;
+			overflow: hidden;
+		}
+		.carousel-inner::after {
+			display: block;
+			clear: both;
+			content: '';
+		}
+		.carousel-item {
+			position: relative;
+			display: none;
+			float: left;
+			width: 100%;
+			margin-right: -100%;
+			-webkit-backface-visibility: hidden;
+			backface-visibility: hidden;
+			transition: transform 0.6s ease-in-out;
+		}
+		@media (prefers-reduced-motion: reduce) {
+			.carousel-item {
+				transition: none;
+			}
+		}
+
+		.carousel-control-prev {
+			left: 0;
+		}
+		.carousel-control-next {
+			right: 0;
+		}
+	</style>
+	<link rel="preload" href="./assets/bootstrap/bootstrap.css" as="style" onload="this.onload=null;this.rel='stylesheet'" media="screen">
+	<noscript><link rel="stylesheet" href="styles.css"></noscript>
 	<link rel="stylesheet" href="./assets/style.css" media="screen">
 	
 	<link rel="preconnect" href="https://fonts.googleapis.com">
@@ -15,8 +170,8 @@
 	<link href="https://fonts.googleapis.com/css2?family=Inter&family=Spectral:ital,wght@0,400;1,300;1,400;1,800&display=swap" rel="stylesheet">
 	
 	
-	<script src="./assets/bootstrap/bootstrap.bundle.js"></script>
-	<script src="https://code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+	<script src="./assets/bootstrap/bootstrap.bundle.js" defer></script>
+	<script src="https://code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous" defer></script>
 	<script src="./assets/maugallery.js" defer></script>
 	<script src="./assets/scripts.js" defer></script>
 </head>
@@ -30,7 +185,7 @@
 			<li><a href="#gallery">Galerie</a></li>
 			<li><a href="#services">Service</a></li>
 			<li><a href="#contact">Contact</a></li>
-			<li><a class="social-link" href="https://www.instagram.com/ninacarducci.photo/?hl=fr" target="_blank"><img src="assets/images/instagram.png" alt="logo de instagram"></a></li>
+			<li><a class="social-link" href="https://www.instagram.com/ninacarducci.photo/?hl=fr" target="_blank"><img src="assets/images/instagram.png" alt="logo de instagram" width="20px" height="20px"></a></li>
 		</ul>
 	</nav>
 </header>
@@ -43,7 +198,7 @@
 				<button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
 			</div>
 
-			<div class="carousel-inner">
+			<div class="carousel-inner" height="(179 / 540) * 100%" width="100%">
 				<div class="carousel-item active">
 					<img src="./assets/images/slider/ryoji-iwata_businessman.webp" class="d-block w-100" alt="Homme d'affaire de dos marchant sur un passage piéton">
 				</div>
@@ -67,7 +222,7 @@
 
 	<section id="about">
 		<div class="picture left">
-			<img src="./assets/images/nina-carducci.webp" alt="Nina Carducci de face dans la forêt">
+			<img src="./assets/images/nina-carducci.webp" alt="Nina Carducci de face dans la forêt" height="(1 / 1) * 100%" width="35%">
 		</div>
 		<div id="about-me">
 			<h2 class="about-me__title">A propos de moi</h2>
@@ -81,15 +236,15 @@
 		<h2 class="title">Portfolio</h2>
 		<div class="container py-3">
 			<div class="gallery" style="display: none">
-				<img data-gallery-tag="Concert" class="gallery-item" src="./assets/images/gallery/concerts/aaron-paul_concert.webp" alt="Salle de concert avec lumière au ton rouge"/>
-				<img data-gallery-tag="Entreprises" class="gallery-item" src="./assets/images/gallery/entreprise/ali-morshedlou_businessman.webp" alt="Portrait homme d'affaire les bras croisés dans la ville"/>
-				<img data-gallery-tag="Entreprises" class="gallery-item" src="./assets/images/gallery/entreprise/jason-goodman_meeting.webp" alt="Femme souriant avec ses collègues lors d'une réunion au travail"/>
-				<img data-gallery-tag="Mariages" class="gallery-item" src="./assets/images/gallery/mariage/hannah-busing_married-hand.webp" alt="Mains d'un couple qui vient de se marier"/>
-				<img data-gallery-tag="Portrait" class="gallery-item" src="./assets/images/gallery/portraits/ade-tunji_man-closing-eyes.webp" alt="Portrait homme fermant les yeux"/>
-				<img data-gallery-tag="Mariages" class="gallery-item" src="./assets/images/gallery/mariage/jakob-owens_wedding-photo.webp" alt="Un couple marié se tenant la main et souriant"/>
-				<img data-gallery-tag="Portrait" class="gallery-item" src="./assets/images/gallery/portraits/nino-van-prattenburg_woman-behind-wire-fence.webp" alt="Portrait jeune femme passant sa main dans ses cheveux derrière un grillage"/>
-				<img data-gallery-tag="Concert" class="gallery-item" src="./assets/images/gallery/concerts/austin-neill_concert-singer.webp" alt="Chanteur pendant son concert avec de la fumée colorée en fond"/>
-				<img data-gallery-tag="Entreprises" class="gallery-item" src="./assets/images/gallery/entreprise/mateus-campos-felipe_woman-working-computer.webp" alt="Femme riant qui se tient devant un ordinateur dans son entreprise"/>
+				<img data-gallery-tag="Concert" class="gallery-item" src="./assets/images/gallery/concerts/aaron-paul_concert.webp" alt="Salle de concert avec lumière au ton rouge" height="(1 / 1) * 100%" width="30%" />
+				<img data-gallery-tag="Entreprises" class="gallery-item" src="./assets/images/gallery/entreprise/ali-morshedlou_businessman.webp" alt="Portrait homme d'affaire les bras croisés dans la ville" height="(1 / 1) * 100%" width="30%"/>
+				<img data-gallery-tag="Entreprises" class="gallery-item" src="./assets/images/gallery/entreprise/jason-goodman_meeting.webp" alt="Femme souriant avec ses collègues lors d'une réunion au travail" height="(1 / 1) * 100%" width="30%"/>
+				<img data-gallery-tag="Mariages" class="gallery-item" src="./assets/images/gallery/mariage/hannah-busing_married-hand.webp" alt="Mains d'un couple qui vient de se marier" height="(1 / 1) * 100%" width="30%"/>
+				<img data-gallery-tag="Portrait" class="gallery-item" src="./assets/images/gallery/portraits/ade-tunji_man-closing-eyes.webp" alt="Portrait homme fermant les yeux" height="(1 / 1) * 100%" width="30%"/>
+				<img data-gallery-tag="Mariages" class="gallery-item" src="./assets/images/gallery/mariage/jakob-owens_wedding-photo.webp" alt="Un couple marié se tenant la main et souriant" height="(1 / 1) * 100%" width="30%"/>
+				<img data-gallery-tag="Portrait" class="gallery-item" src="./assets/images/gallery/portraits/nino-van-prattenburg_woman-behind-wire-fence.webp" alt="Portrait jeune femme passant sa main dans ses cheveux derrière un grillage" height="(1 / 1) * 100%" width="30%"/>
+				<img data-gallery-tag="Concert" class="gallery-item" src="./assets/images/gallery/concerts/austin-neill_concert-singer.webp" alt="Chanteur pendant son concert avec de la fumée colorée en fond" height="(1 / 1) * 100%" width="30%"/>
+				<img data-gallery-tag="Entreprises" class="gallery-item" src="./assets/images/gallery/entreprise/mateus-campos-felipe_woman-working-computer.webp" alt="Femme riant qui se tient devant un ordinateur dans son entreprise" height="(1 / 1) * 100%" width="30%"/>
 			</div>
 		</div>
 
@@ -165,7 +320,7 @@
 			</div>
 
 			<div class="picture right">
-				<img src="./assets/images/camera.webp" alt="Appareil photo avec des reflets de lumière orange">
+				<img src="./assets/images/camera.webp" alt="Appareil photo avec des reflets de lumière orange" height="(1 / 1) * 100%" width="35%">
 			</div>
 		</div>
 	</section>
