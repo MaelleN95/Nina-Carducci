@@ -8,19 +8,19 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	
 	<link rel="preload" href="./assets/bootstrap/bootstrap.css" as="style" onload="this.onload=null;this.rel='stylesheet'" media="screen">
-	<noscript><link rel="stylesheet" href="./assets/bootstrap/bootstrap.css"></noscript>
+	<noscript><link rel="stylesheet" href="./assets/bootstrap/bootstrap.css" media="screen"></noscript>
 	<link rel="stylesheet" href="./assets/style.css" media="screen">
 		
 	<link rel="preconnect" href="https://fonts.googleapis.com">
 	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-	<link href="https://fonts.googleapis.com/css2?family=Spectral:ital,wght@0,800;1,300;1,400;1,800&display=swap" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css2?family=Inter&display=swap" rel="stylesheet">
 	
-	<script src="./assets/bootstrap/bootstrap.bundle.js" defer></script>
+	<script src="./assets/bootstrap/bootstrap.bundle.js" async></script>
 	<script src="https://code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous" defer></script>
 	<script src="./assets/maugallery.js" defer></script>
 	<script src="./assets/scripts.js" defer></script>
 
-	<script src="lazysizes.min.js" async=""></script>
+	<script src="./assets/node_modules/lazysizes/lazysizes.min.js" async></script>
 </head>
 
 <body>
@@ -45,7 +45,7 @@
 				<button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
 			</div>
 
-			<div class="carousel-inner" height="(179 / 540) * 100%" width="100%">
+			<div class="carousel-inner" aspect-ratio="(179 / 540) * 100%" width="100%">
 				<div class="carousel-item active">
 					<img src="./assets/images/slider/ryoji-iwata_businessman.webp" class="d-block w-100" alt="Homme d'affaire de dos marchant sur un passage piéton">
 				</div>
