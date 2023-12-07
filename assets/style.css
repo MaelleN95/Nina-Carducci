@@ -49,7 +49,51 @@ nav a:hover, nav a:focus {
 	width: 20px;
 	height: 20px;
 }
-
+h1,
+h2,
+h3,
+h4,
+.about-me__introduction,
+.quote__text,
+.service__price span {
+  margin-top: 0;
+  margin-bottom: 0.5rem;
+  font-weight: 500;
+  line-height: 1.2;
+}
+h1,
+.quote__text {
+  font-size: calc(1.375rem + 1.5vw);
+}
+@media (min-width: 1200px) {
+  .h1,
+  h1,
+  .quote__text {
+    font-size: 2.5rem;
+  }
+}
+h1,
+h2,
+h3 {
+  font-size: calc(1.3rem + 0.6vw);
+}
+@media (min-width: 1200px) {
+  h1,
+  h2,
+  h3 {
+    font-size: 1.75rem;
+  }
+}
+h4,
+.service__price span {
+  font-size: calc(1.275rem + 0.3vw);
+}
+@media (min-width: 1200px) {
+  h4,
+  .service__price span {
+    font-size: 1.5rem;
+  }
+}
 .carousel-control-prev:hover, .carousel-control-next:hover{
 	background-color: rgba(0, 0, 0, 0.3);
 }
@@ -96,6 +140,7 @@ nav a:hover, nav a:focus {
 .about-me__introduction {
 	display: block;
 	font-family: 'Spectral';
+	font-size: 1rem;
 	font-weight: 800;
 	font-style: italic;
 	width: 60%;
@@ -383,4 +428,3 @@ input[type="submit"] {
 		width: 80%;
 	}
 }
-
