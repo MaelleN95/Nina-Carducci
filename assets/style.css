@@ -17,7 +17,11 @@ header {
 	padding-block: 30px;
 	align-items: center;
 }
-
+.w-100{
+	width: 100%;
+ 	max-width: 2000px;
+ 	height: auto;
+}
 header .name {
 	font-size: 26px;
 }
@@ -317,6 +321,47 @@ form textarea {
 input[type="submit"] {
 	background-color: #BEB45A;
 	padding: .5em 1em
+}
+
+footer{
+	padding-top: 2em;
+	text-align: center;
+	background-color: black;
+	color: white;
+}
+
+footer a{
+	text-decoration: none;
+	color: white;
+}
+footer a:hover{
+	text-decoration: underline #BEB45A;
+}
+.column{
+	margin-left: 2em;
+	margin-right: 2em;
+}
+footer h3{
+	font-size: calc(0.9rem + 0.3vw);
+	text-decoration: underline;
+	margin-top: 0.8em;
+}
+.test{
+	display: flex;
+	justify-content: center;
+}
+
+hr{
+	width: 50%;
+	margin-right: 25%;
+	margin-left: 25%;
+}
+
+.info{
+	text-align: center;
+	font-size: 10px;
+	padding-bottom: 2em;
+	margin: 0;
 }
 
 @media all and (max-width: 1180px) {
