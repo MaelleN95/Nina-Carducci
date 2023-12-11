@@ -3,7 +3,7 @@ body {
 	margin: auto;
 }
 * {
-	font-family: 'Inter';
+	font-family: 'Inter',Arial, sans-serif;
 	font-style: normal;
 }
 header {
@@ -245,6 +245,16 @@ h4,
 	left: 0;
 	z-index: 0;
 }
+#contact::before{
+	content: ' ';
+	background-color: #BEB45A;
+	position: absolute;
+	width: 100%;
+	height: 25%;
+	top: 0;
+	left: 0;
+	z-index: -1;
+}
 
 #services .container {
 	justify-content: space-between;
@@ -275,6 +285,7 @@ h4,
 	position: relative;
 	padding-inline: 100px;
 	padding-block: 100px;
+	z-index: 0;
 }
 
 #contact .container {
@@ -292,7 +303,44 @@ h4,
 }
 .form-container {
 	flex : 2;
+	z-index: 2;
+}
+.contact-container{
+	padding-left : 1rem;
+	padding-right: 1rem;
+}
+.contact-container a{
+	text-decoration: none;
+	color: black;
+}
+.contact-container h3{
+	font-size: calc(0.9rem + 0.4vw);
+	text-decoration: underline;
+	margin-top: 0.7em;
+}
 
+.contact-container h2{
+	text-align: center;
+}
+.contact-info{
+	width: 100%;
+	display: flex;
+	justify-content: space-between;
+	text-align: center;
+	margin: 1em 0;
+	align-items: center;
+}
+
+.column-info{
+	margin: 2em;
+	background-color: white;
+	width: 30%;
+	height: 105px;
+	max-width: 390px;
+}
+.large{
+	padding-right: 1.2em;
+	padding-left: 1.2em;
 }
 form {
 	display: flex;
@@ -324,7 +372,7 @@ input[type="submit"] {
 }
 
 footer{
-	padding-top: 2em;
+	padding-top: 1.5em;
 	text-align: center;
 	background-color: black;
 	color: white;
@@ -341,11 +389,6 @@ footer a:hover{
 	margin-left: 2em;
 	margin-right: 2em;
 }
-footer h3{
-	font-size: calc(0.9rem + 0.3vw);
-	text-decoration: underline;
-	margin-top: 0.8em;
-}
 .test{
 	display: flex;
 	justify-content: center;
@@ -359,7 +402,7 @@ hr{
 
 .info{
 	text-align: center;
-	font-size: 10px;
+	font-size: 11px;
 	padding-bottom: 2em;
 	margin: 0;
 }
@@ -377,6 +420,9 @@ hr{
 	}
 	.about-me__introduction , #about-me p {
 		width: 100%;
+	}
+	.column-info{
+		height: 120px;
 	}
 }
 
@@ -404,6 +450,7 @@ hr{
 	#services .container {
 		flex-direction: column;
 	}
+	
 	.service {
 		width: 100%;
 		max-width: 100%;
@@ -422,6 +469,22 @@ hr{
 		left: auto;
 		z-index: 0;
 	}
+	.contact-info{
+		flex-direction: column;
+	}
+	.column-info{
+		width: 100%;
+		max-width: 100%;
+		height: auto;
+		margin: 1.5em 0
+	}
+	#contact::before {
+		width: 63%;
+		height: 38%;
+		bottom: 0;
+		left: 0;
+		right: auto;
+	}
 
 	#contact .container {
 		flex-direction: column;
@@ -431,7 +494,7 @@ hr{
 	}
 	.picture.right::before {
 		width: 100%;
-		height: 30%;
+		height: 20%;
 		position: absolute;
 		bottom: 0;
 		right: 0;
@@ -455,6 +518,10 @@ hr{
 	}
 	.picture.left::before, .picture.right::before {
 		height: 150px;
+	}
+	#contact::before {
+		width: 100%;
+		height: 35%;
 	}
 	#services .container {
 		align-items: center;
