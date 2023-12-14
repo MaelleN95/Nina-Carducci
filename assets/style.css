@@ -200,6 +200,7 @@ h4,
 	max-height: 600px;
 	object-fit: cover;
 	padding: .5em;
+	cursor: pointer;
 }
 .mg-prev, .mg-next {
 	width: 30px;
