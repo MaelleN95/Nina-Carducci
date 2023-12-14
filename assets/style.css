@@ -324,11 +324,14 @@ h4,
 }
 .contact-info{
 	width: 100%;
+	max-width: 1400px;
 	display: flex;
 	justify-content: space-between;
 	text-align: center;
 	margin: 1em 0;
 	align-items: center;
+	margin-left: auto;
+	margin-right: auto;
 }
 
 .column-info{
