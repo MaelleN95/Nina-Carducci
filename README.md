@@ -38,9 +38,9 @@ Ce projet fait partie de ma formation sur OpenClassrooms pour le parcours [Déve
 ## Structure du projet
 
 - `index.html` : Le fichier HTML principal
-- `css/style.css` : Le fichier CSS principal
-- `js/scripts.js` : Le fichier JavaScript principal
-- `images/` : Contient les images optimisées pour la mise en page
+- `assets/style.css` : Le fichier CSS principal
+- `assets/scripts.js` : Le fichier JavaScript principal
+- `assets/images/` : Contient les images optimisées pour la mise en page
 
 ## Technologies utilisées
 
