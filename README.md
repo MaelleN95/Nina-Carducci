@@ -21,7 +21,7 @@
 
 Ce projet consiste à optimiser les performances, le SEO, et l'accessibilité du site web de la photographe Nina Carducci. Le site, réalisé en HTML et CSS, présentait des problèmes de chargement et d'accessibilité, et nécessitait une meilleure optimisation pour le référencement local ainsi que sur les réseaux sociaux.
 
-L'objectif est de livrer un site web plus performant, accessible, et mieux référencé, en s'appuyant sur des audits techniques réalisés via Lighthouse et Wave, tout en corrigeant les bugs existants dans le code.
+L'objectif est de livrer un site web plus performant, accessible, et mieux référencé, en s'appuyant sur des audits techniques réalisés via **Lighthouse** et **Wave**, tout en corrigeant les bugs existants dans le code.
 
 Ce projet fait partie de ma formation sur OpenClassrooms pour le parcours [Développeur Web](https://openclassrooms.com/fr/paths/899-developpeur-web).
 
@@ -82,10 +82,10 @@ Ce projet fait partie de ma formation sur OpenClassrooms pour le parcours [Déve
 
 ### I - Score Lighthouse
 
-#### Score Lighthouse avant optimisation - Mobile
+#### Avant optimisation - Mobile
 ![image](https://github.com/user-attachments/assets/f7936f25-8f61-48bf-931d-1ba4e7f7828a)
 
-#### Score Lighthouse après optimisation - Mobile
+#### Après optimisation - Mobile
 ![image](https://github.com/user-attachments/assets/16bbb9a2-37ee-4cc7-b2f8-a3bac2266e58)
 
 ### II - Détails des optimisations et interventions effectuées
@@ -96,7 +96,7 @@ Voici les principales réalisations :
 #### Optimisation des Performances :
 
 - Réduction significative du poids total des images de 29.4 MB à 0.64 MB, soit une **amélioration de 97.82 %**.
-- Mise en place de techniques de **chargement différé et prioritaire** des images pour optimiser les temps de chargement de la page.
+- Mise en place de techniques de **lazy loading** et de **chargement prioritaire** des images pour optimiser les temps de chargement de la page.
 
 #### Amélioration du SEO :
 
@@ -105,12 +105,12 @@ Voici les principales réalisations :
 
 #### Accessibilité Renforcée :
 
-- Révision de la hiérarchie des titres et ajout de descriptions alternatives pour les images, ce qui a conduit à une **meilleure conformité avec les standards d'accessibilité**.
+- Révision de la hiérarchie des titres et ajout d'attributs HTML "alt" pour les descriptions alternatives des images, ce qui a conduit à une **meilleure conformité avec les standards d'accessibilité**.
 - Amélioration de la **navigation au clavier** et du **contraste** pour garantir une expérience utilisateur inclusive.
 
 #### Optimisation des Fichiers :
 
-- **Minification des fichiers CSS et JavaScript**, avec intégration de CDN pour réduire les temps de chargement.
+- [**Minification des fichiers CSS et JavaScript**](https://www.minifier.org/), avec intégration de CDN pour réduire les temps de chargement.
 - **Spécification de la police de secours** et optimisation du chargement des fichiers en fonction des types d’appareils.
 
 #### Référencement Local et Réseaux Sociaux :
