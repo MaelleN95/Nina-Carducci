@@ -110,7 +110,7 @@ Voici les principales réalisations :
 
 #### Optimisation des Fichiers :
 
-- [**Minification des fichiers CSS et JavaScript**](https://www.minifier.org/), avec intégration de CDN pour réduire les temps de chargement.
+- [**Minification des fichiers CSS et JavaScript**](https://www.minifier.org/), avec intégration de [CDN](https://www.jsdelivr.com/) pour réduire les temps de chargement.
 - **Spécification de la police de secours** et optimisation du chargement des fichiers en fonction des types d’appareils.
 
 #### Référencement Local et Réseaux Sociaux :
