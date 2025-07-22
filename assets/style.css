@@ -375,7 +375,7 @@ input[type="submit"] {
 	padding: .5em 1em
 }
 
-footer{
+/* footer{
 	padding-top: 1.5em;
 	text-align: center;
 	background-color: black;
@@ -388,7 +388,35 @@ footer a{
 }
 footer a:hover{
 	text-decoration: underline #BEB45A;
+} */
+
+footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1.5rem;
+  background-color: black !important;
 }
+
+footer {
+  color: white;
+  text-align: end;
+  background-color: var(--black);
+}
+
+footer p {
+  margin: 0.2rem 0;
+}
+
+footer a {
+  color: white;
+  font-weight: bold;
+}
+
+footer a:hover {
+  color: #BEB45A;
+}
+
 .column{
 	margin-left: 2em;
 	margin-right: 2em;
